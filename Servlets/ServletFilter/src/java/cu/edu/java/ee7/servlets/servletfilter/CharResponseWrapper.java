@@ -6,8 +6,10 @@ import java.io.CharArrayWriter;
 import java.io.PrintWriter;
 
 public class CharResponseWrapper extends HttpServletResponseWrapper {
-    private CharArrayWriter output;
+    
+    private final CharArrayWriter output;
 
+    @Override
     public String toString() {
         return output.toString();
     }
@@ -17,6 +19,7 @@ public class CharResponseWrapper extends HttpServletResponseWrapper {
         output = new CharArrayWriter();
     }
 
+    @Override
     public PrintWriter getWriter() {
         return new PrintWriter(output);
     }
