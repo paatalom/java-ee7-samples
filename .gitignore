@@ -11,3 +11,5 @@
 /Servlets/NonBlockingIO/nbproject/private/
 /Servlets/WebFragments/nbproject/private/
 /Servlets/Security-BasicAuth/nbproject/private/
+/Servlets/Security-BasicAuth/build/
+/Servlets/Security-BasicAuth/dist/
