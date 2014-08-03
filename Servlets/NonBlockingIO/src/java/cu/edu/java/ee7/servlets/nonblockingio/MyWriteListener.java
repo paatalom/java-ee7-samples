@@ -8,9 +8,6 @@ import javax.servlet.AsyncContext;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.WriteListener;
 
-/**
- * @author Arun Gupta
- */
 public class MyWriteListener implements WriteListener {
 
     private ServletOutputStream output = null;

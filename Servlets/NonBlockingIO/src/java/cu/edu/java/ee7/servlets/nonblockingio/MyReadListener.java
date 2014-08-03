@@ -7,9 +7,6 @@ import javax.servlet.AsyncContext;
 import javax.servlet.ReadListener;
 import javax.servlet.ServletInputStream;
 
-/**
- * @author Arun Gupta
- */
 public class MyReadListener implements ReadListener {
 
     private ServletInputStream input = null;
