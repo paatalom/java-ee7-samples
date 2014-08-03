@@ -3,11 +3,6 @@ package cu.edu.java.ee7.servlets.eventlisteners;
 import javax.servlet.http.HttpSessionActivationListener;
 import javax.servlet.http.HttpSessionEvent;
 
-/**
- * Web application lifecycle listener.
- *
- * @author Arun Gupta
- */
 public class MyHttpSessionActivationListener implements HttpSessionActivationListener {
 
     @Override

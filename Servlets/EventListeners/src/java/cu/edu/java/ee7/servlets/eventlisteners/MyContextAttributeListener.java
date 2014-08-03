@@ -4,11 +4,6 @@ import javax.servlet.ServletContextAttributeEvent;
 import javax.servlet.ServletContextAttributeListener;
 import javax.servlet.annotation.WebListener;
 
-/**
- * Web application lifecycle listener.
- *
- * @author Arun Gupta
- */
 @WebListener
 public class MyContextAttributeListener implements ServletContextAttributeListener {
 

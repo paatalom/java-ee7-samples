@@ -4,11 +4,6 @@ import javax.servlet.ServletRequestAttributeEvent;
 import javax.servlet.ServletRequestAttributeListener;
 import javax.servlet.annotation.WebListener;
 
-/**
- * Web application lifecycle listener.
- *
- * @author Arun Gupta
- */
 @WebListener
 public class MyServletRequestAttributeListener implements ServletRequestAttributeListener {
 

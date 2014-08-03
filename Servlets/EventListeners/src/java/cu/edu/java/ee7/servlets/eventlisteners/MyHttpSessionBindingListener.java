@@ -3,11 +3,6 @@ package cu.edu.java.ee7.servlets.eventlisteners;
 import javax.servlet.http.HttpSessionBindingEvent;
 import javax.servlet.http.HttpSessionBindingListener;
 
-/**
- * Web application lifecycle listener.
- *
- * @author Arun Gupta
- */
 public class MyHttpSessionBindingListener implements HttpSessionBindingListener {
 
     @Override

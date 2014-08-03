@@ -4,11 +4,6 @@ import javax.servlet.annotation.WebListener;
 import javax.servlet.http.HttpSessionAttributeListener;
 import javax.servlet.http.HttpSessionBindingEvent;
 
-/**
- * Web application lifecycle listener.
- *
- * @author Arun Gupta
- */
 @WebListener
 public class MyHttpSessionAttributeListener implements HttpSessionAttributeListener {
 
