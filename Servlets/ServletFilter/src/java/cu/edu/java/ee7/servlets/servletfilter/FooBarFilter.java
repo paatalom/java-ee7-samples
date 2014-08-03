@@ -11,9 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-/**
- * @author Arun Gupta
- */
 @WebFilter(filterName = "FooBarFilter", urlPatterns = {"/filtered/*"})
 public class FooBarFilter implements Filter {
 

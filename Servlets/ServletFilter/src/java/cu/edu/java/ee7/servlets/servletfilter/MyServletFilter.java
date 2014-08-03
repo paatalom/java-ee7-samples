@@ -14,10 +14,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author paata1
- */
 @WebServlet(name = "MyServletFilter", urlPatterns = {"/MyServletFilter","/filtered/MyServletFilter"})
 public class MyServletFilter extends HttpServlet {
 
@@ -77,5 +73,4 @@ public class MyServletFilter extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
 }
