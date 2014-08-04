@@ -6,9 +6,6 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpUpgradeHandler;
 import javax.servlet.http.WebConnection;
 
-/**
- * @author Arun Gupta
- */
 public class MyProtocolHandler implements HttpUpgradeHandler {
 
 //    public MyProtocolHandler(ServletInputStream in, ServletOutputStream out) {
