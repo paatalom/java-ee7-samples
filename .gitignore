@@ -44,3 +44,5 @@
 /Servlets/Protocol-Handler/dist/
 /Servlets/Protocol-Handler/build/
 /Servlets/Programmatic-Registration/nbproject/private/
+/Servlets/Programmatic-Registration/build/
+/Servlets/Programmatic-Registration/dist/
