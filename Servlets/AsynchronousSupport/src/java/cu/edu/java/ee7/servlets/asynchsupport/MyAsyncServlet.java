@@ -83,6 +83,7 @@ public class MyAsyncServlet extends HttpServlet {
                 System.out.println("Running inside MyAsyncService");
                 Thread.sleep(5000l);
                 ac.complete();
+                throw new InterruptedException("Interrupted Exception will be thrown.");
             }
             catch(InterruptedException e){
                 e.printStackTrace();
