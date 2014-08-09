@@ -16,7 +16,6 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(urlPatterns = "/MyAsyncServlet", asyncSupported = true)
 public class MyAsyncServlet extends HttpServlet {
 
-//    @Resource(lookup="java:comp/DefaultManagedExecutorService")
     @Resource
     ManagedExecutorService executor;
 
