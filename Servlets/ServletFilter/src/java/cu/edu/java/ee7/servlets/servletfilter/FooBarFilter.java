@@ -19,7 +19,7 @@ public class FooBarFilter implements Filter {
     private void doBeforeProcessing(ServletRequest request, ServletResponse response)
             throws IOException, ServletException {
         try (PrintWriter out = response.getWriter()) {
-            out.print("foo--");
+            out.print("before servlet request -- ");
             out.flush();
         }
     }
@@ -27,7 +27,7 @@ public class FooBarFilter implements Filter {
     private void doAfterProcessing(ServletRequest request, ServletResponse response)
             throws IOException, ServletException {
         try (PrintWriter out = response.getWriter()) {
-            out.print("--bar");
+            out.print(" -- after servlet request");
             out.flush();
         }
     }
