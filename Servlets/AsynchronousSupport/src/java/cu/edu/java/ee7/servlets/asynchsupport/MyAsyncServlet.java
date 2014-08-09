@@ -13,10 +13,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
 @WebServlet(urlPatterns = "/MyAsyncServlet", asyncSupported = true)
 public class MyAsyncServlet extends HttpServlet {
-    
+
 //    @Resource(lookup="java:comp/DefaultManagedExecutorService")
     @Resource
     ManagedExecutorService executor;
@@ -81,8 +80,14 @@ public class MyAsyncServlet extends HttpServlet {
 
         @Override
         public void run() {
-            System.out.println("Running inside MyAsyncService");
-            ac.complete();
+            try {
+                System.out.println("Running inside MyAsyncService");
+                Thread.sleep(30000l);
+                ac.complete();
+            }
+            catch(InterruptedException e){
+                e.printStackTrace();
+            }
         }
     }
 
