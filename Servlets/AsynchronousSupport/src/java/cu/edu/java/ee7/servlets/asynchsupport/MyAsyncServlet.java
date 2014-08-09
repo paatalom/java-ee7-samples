@@ -81,7 +81,7 @@ public class MyAsyncServlet extends HttpServlet {
         public void run() {
             try {
                 System.out.println("Running inside MyAsyncService");
-                Thread.sleep(30000l);
+                Thread.sleep(5000l);
                 ac.complete();
             }
             catch(InterruptedException e){
