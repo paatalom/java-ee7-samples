@@ -22,9 +22,8 @@ public class MyWriteListener implements WriteListener {
     public void onWritePossible() {
         if (output.isReady()) {
             try {
-                byte[] b = new byte[100];
-                Arrays.fill(b, 0, 100, (byte) 'a');
-                output.write(b);
+                output.write("Asynchronous Data Output".getBytes());
+                context.complete();
             } catch (IOException ex) {
                 Logger.getLogger(MyWriteListener.class.getName()).log(Level.SEVERE, null, ex);
             }

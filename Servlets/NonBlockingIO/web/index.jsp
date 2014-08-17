@@ -50,7 +50,7 @@
     </head>
     <body>
         <h1>Non-blocking I/O using Servlet 3.1</h1>
-        Invoke <a href="${pageContext.request.contextPath}/TestClient">non-blocking input client</a><br/>
-        Invoke <a href="${pageContext.request.contextPath}/TestClient">non-blocking output client</a>
+        Invoke <a href="${pageContext.request.contextPath}/ReadTestClient">non-blocking input client</a><br/>
+        Invoke <a href="${pageContext.request.contextPath}/WriteTestClient">non-blocking output client</a>
     </body>
 </html>

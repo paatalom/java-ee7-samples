@@ -14,8 +14,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns = {"/TestClient"})
-public class TestClient extends HttpServlet {
+@WebServlet(urlPatterns = {"/ReadTestClient"})
+public class ReadTestClient extends HttpServlet {
 
     /**
      * Processes requests for both HTTP
