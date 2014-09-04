@@ -26,9 +26,10 @@ public class MyServletFilter extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    private void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        System.out.println("MyServletFilter. ProcessRequest Method Invoked.");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
            out.print("servlet request completed");
@@ -47,6 +48,7 @@ public class MyServletFilter extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        System.out.println("MyServletFilter. doGet Method Invoked.");
         processRequest(request, response);
     }
 
@@ -61,6 +63,7 @@ public class MyServletFilter extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        System.out.println("MyServletFilter. doPost Method Invoked.");
         processRequest(request, response);
     }
 

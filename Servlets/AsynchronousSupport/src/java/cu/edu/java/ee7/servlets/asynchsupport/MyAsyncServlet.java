@@ -40,7 +40,6 @@ public class MyAsyncServlet extends HttpServlet {
             out.println("<body>");
             out.println("<h1>Async Servlet</h1>");
             AsyncContext ac = request.startAsync();
-
             ac.addListener(new AsyncListener() {
                 @Override
                 public void onComplete(AsyncEvent event) throws IOException {
@@ -83,7 +82,6 @@ public class MyAsyncServlet extends HttpServlet {
                 System.out.println("Running inside MyAsyncService");
                 Thread.sleep(5000l);
                 ac.complete();
-                throw new InterruptedException("Interrupted Exception will be thrown.");
             }
             catch(InterruptedException e){
                 e.printStackTrace();

@@ -18,6 +18,7 @@ public class FooBarFilter implements Filter {
 
     private void doBeforeProcessing(ServletRequest request, ServletResponse response)
             throws IOException, ServletException {
+        System.out.println("Filter doBeforeProcessing Method Invoked.");
         try (PrintWriter out = response.getWriter()) {
             out.print("before servlet request -- ");
             out.flush();
@@ -26,6 +27,7 @@ public class FooBarFilter implements Filter {
 
     private void doAfterProcessing(ServletRequest request, ServletResponse response)
             throws IOException, ServletException {
+        System.out.println("Filter doAfterProcessing Method Invoked.");
         try (PrintWriter out = response.getWriter()) {
             out.print(" -- after servlet request");
             out.flush();
@@ -36,6 +38,7 @@ public class FooBarFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response,
             FilterChain chain)
             throws IOException, ServletException {
+        System.out.println("Filter doFilter Method Invoked.");
         PrintWriter out = response.getWriter();
         CharResponseWrapper wrappedResponse = new CharResponseWrapper(
                 (HttpServletResponse)response);
@@ -53,6 +56,7 @@ public class FooBarFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) {
+        System.out.println("Filter Init Method Invoked.");
         this.filterConfig = filterConfig;
     }
 

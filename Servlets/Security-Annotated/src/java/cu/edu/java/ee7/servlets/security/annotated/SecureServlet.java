@@ -12,11 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/SecureServlet")
-//@ServletSecurity(value = @HttpConstraint(rolesAllowed = {"g1"}),
-//        httpMethodConstraints = {
-//            @HttpMethodConstraint(value = "GET", rolesAllowed = {"g1"}),
-//            @HttpMethodConstraint(value = "POST", rolesAllowed = {"g1"})
-//        })
 @ServletSecurity(@HttpConstraint(rolesAllowed={"g1"}))
 @RolesAllowed("g1")
 public class SecureServlet extends HttpServlet {
