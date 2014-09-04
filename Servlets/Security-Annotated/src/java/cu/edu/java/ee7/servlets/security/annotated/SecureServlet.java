@@ -2,7 +2,6 @@ package cu.edu.java.ee7.servlets.security.annotated;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.annotation.security.RolesAllowed;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.HttpConstraint;
 import javax.servlet.annotation.ServletSecurity;
@@ -13,7 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/SecureServlet")
 @ServletSecurity(@HttpConstraint(rolesAllowed={"g1"}))
-@RolesAllowed("g1")
 public class SecureServlet extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response, String method)
