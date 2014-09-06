@@ -1,4 +1,4 @@
-package cu.edu.java.ee7.jsf.simple.facelet;
+package cu.edu.java.ee7.jsf.resource.handling;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,6 @@ import javax.inject.Named;
 @Named
 @Stateless
 public class CustomerSessionBean {
-    
     public List<Name> getCustomerNames() {
         List<Name> names = new ArrayList<>();
         
