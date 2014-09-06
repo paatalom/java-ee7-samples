@@ -51,3 +51,6 @@
 /Servlets/NonBlockingIO/dist/
 /Servlets/WebFragments/build/
 /Servlets/WebFragments/dist/
+/jsf/SimpleFacelet/nbproject/private/
+/jsf/SimpleFacelet/build/
+/jsf/SimpleFacelet/dist/
