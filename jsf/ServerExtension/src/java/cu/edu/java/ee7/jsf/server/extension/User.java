@@ -6,6 +6,7 @@ import javax.inject.Named;
 @Named
 @ApplicationScoped
 public class User {
+    
     private int age;
     private String name;
     

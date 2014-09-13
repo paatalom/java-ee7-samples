@@ -22,9 +22,9 @@
         
         <h2>Custom Converter</h2>
         Converts the entered characters to number
-        <h:form>
+        <h:form id="formId" prependId="false">
             Enter a number: 
-            <h:inputText value="#{userAge}" id="age">
+            <h:inputText value="#{userAge.age}" id="age">
                 <f:converter converterId="myConverter"/>
             </h:inputText>
             <h:commandButton value="Submit" action="converter"/>

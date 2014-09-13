@@ -17,8 +17,9 @@ public class MyConverter implements Converter {
             String value) {
         System.out.println("Received: " + value);
         try {
-            return new UserAge(Integer.parseInt(value.trim()));
+            return Integer.parseInt(value.trim());
         } catch (NumberFormatException e) {
+            e.printStackTrace();
             throw new ConverterException(new FacesMessage(e.toString()), e);
         }
     }
@@ -27,7 +28,7 @@ public class MyConverter implements Converter {
     public String getAsString(FacesContext context,
             UIComponent component,
             Object value) { 
-        System.out.println(value);
-        return String.valueOf(((UserAge)value).getAge());
+        System.out.println("getValue : "+value);
+        return String.valueOf(value);
     }
 }

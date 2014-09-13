@@ -7,7 +7,7 @@ import javax.inject.Named;
 
 @Named
 @Stateless
-public class CustomerSessionBean {
+public class CustomerSessionBean {  
     public List<Name> getCustomerNames() {
         List<Name> names = new ArrayList<>();
         
