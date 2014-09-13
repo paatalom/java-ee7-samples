@@ -4,9 +4,6 @@ import java.io.Serializable;
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 
-/**
- * @author Arun Gupta
- */
 @Named
 @SessionScoped
 public class ContractsBean implements Serializable {
