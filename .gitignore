@@ -114,3 +114,4 @@
 /rest/async-server/target/
 /beanparam/target/
 /rest/beanparam/target/
+/rest/beanvalidation/target/
