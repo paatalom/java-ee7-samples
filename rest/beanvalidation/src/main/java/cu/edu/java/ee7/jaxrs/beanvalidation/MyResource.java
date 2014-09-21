@@ -1,4 +1,4 @@
-package org.javaee7.jaxrs.beanvalidation;
+package cu.edu.java.ee7.jaxrs.beanvalidation;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;

@@ -1,5 +1,7 @@
-package org.javaee7.jaxrs.beanvalidation;
+package cu.edu.java.ee7.jaxrs.beanvalidation;
 
+import cu.edu.java.ee7.jaxrs.beanvalidation.MyResource;
+import cu.edu.java.ee7.jaxrs.beanvalidation.MyApplication;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.fail;

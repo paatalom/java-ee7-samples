@@ -1,4 +1,4 @@
-package org.javaee7.jaxrs.beanvalidation;
+package cu.edu.java.ee7.jaxrs.beanvalidation;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
