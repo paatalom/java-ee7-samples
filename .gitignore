@@ -112,3 +112,5 @@
 /rest/TestRestClient/build/
 /rest/async-client/target/
 /rest/async-server/target/
+/beanparam/target/
+/rest/beanparam/target/
