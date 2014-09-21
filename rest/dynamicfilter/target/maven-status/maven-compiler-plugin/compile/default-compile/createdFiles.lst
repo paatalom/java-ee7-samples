@@ -1,0 +1,4 @@
+cu/edu/java/ee7/jaxrs/dynamicfilter/MyApplication.class
+cu/edu/java/ee7/jaxrs/dynamicfilter/ServerLoggingFilter.class
+cu/edu/java/ee7/jaxrs/dynamicfilter/MyResource.class
+cu/edu/java/ee7/jaxrs/dynamicfilter/DynamicServerLogggingFilterFeature.class
