@@ -116,3 +116,4 @@
 /rest/beanparam/target/
 /rest/beanvalidation/target/
 /rest/filter/target/
+/rest/invocation-async/target/
