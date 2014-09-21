@@ -105,3 +105,10 @@
 /jsf/PrimeFacesDataTable/nbproject/private/
 /jsf/PrimeFacesDataTable/build/
 /jsf/PrimeFacesDataTable/dist/
+/rest/TestRest/nbproject/private/
+/rest/TestRest/dist/
+/rest/TestRest/build/
+/rest/TestRestClient/nbproject/private/
+/rest/TestRestClient/build/
+/rest/async-client/target/
+/rest/async-server/target/
