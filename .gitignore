@@ -119,3 +119,4 @@
 /rest/invocation-async/target/
 /rest/mapping-exceptions/target/
 /rest/jaxrs-endpoint/target/
+/rest/readerwriter/target/
