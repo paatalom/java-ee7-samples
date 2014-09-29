@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://endpoint.jaxws.ee7.java.edu.cu/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="EBookStoreImplService" targetNamespace="http://endpoint.jaxws.ee7.java.edu.cu/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://endpoint.jaxws.ee7.java.edu.cu/" elementFormDefault="unqualified" targetNamespace="http://endpoint.jaxws.ee7.java.edu.cu/" version="1.0">
+
+  <xs:element name="addAppendix" type="tns:addAppendix"/>
+
+  <xs:element name="addAppendixResponse" type="tns:addAppendixResponse"/>
+
+  <xs:element name="findEBooks" type="tns:findEBooks"/>
+
+  <xs:element name="findEBooksResponse" type="tns:findEBooksResponse"/>
+
+  <xs:element name="saveBook" type="tns:saveBook"/>
+
+  <xs:element name="saveBookResponse" type="tns:saveBookResponse"/>
+
+  <xs:element name="takeBook" type="tns:takeBook"/>
+
+  <xs:element name="takeBookResponse" type="tns:takeBookResponse"/>
+
+  <xs:element name="welcomeMessage" type="tns:welcomeMessage"/>
+
+  <xs:element name="welcomeMessageResponse" type="tns:welcomeMessageResponse"/>
+
+  <xs:complexType name="findEBooks">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="findEBooksResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="welcomeMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="welcomeMessageResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="takeBook">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="takeBookResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:eBook"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eBook">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="notes" nillable="true" type="xs:string"/>
+      <xs:element name="numPages" type="xs:int"/>
+      <xs:element name="price" type="xs:double"/>
+      <xs:element minOccurs="0" name="title" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="addAppendix">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:eBook"/>
+      <xs:element name="arg1" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="addAppendixResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:eBook"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="saveBook">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:eBook"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="saveBookResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="findEBooks">
+    <wsdl:part element="tns:findEBooks" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="welcomeMessage">
+    <wsdl:part element="tns:welcomeMessage" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="saveBookResponse">
+    <wsdl:part element="tns:saveBookResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addAppendix">
+    <wsdl:part element="tns:addAppendix" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="findEBooksResponse">
+    <wsdl:part element="tns:findEBooksResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addAppendixResponse">
+    <wsdl:part element="tns:addAppendixResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="takeBookResponse">
+    <wsdl:part element="tns:takeBookResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="welcomeMessageResponse">
+    <wsdl:part element="tns:welcomeMessageResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="takeBook">
+    <wsdl:part element="tns:takeBook" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="saveBook">
+    <wsdl:part element="tns:saveBook" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="EBookStore">
+    <wsdl:operation name="findEBooks">
+      <wsdl:input message="tns:findEBooks" name="findEBooks">
+    </wsdl:input>
+      <wsdl:output message="tns:findEBooksResponse" name="findEBooksResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="welcomeMessage">
+      <wsdl:input message="tns:welcomeMessage" name="welcomeMessage">
+    </wsdl:input>
+      <wsdl:output message="tns:welcomeMessageResponse" name="welcomeMessageResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="takeBook">
+      <wsdl:input message="tns:takeBook" name="takeBook">
+    </wsdl:input>
+      <wsdl:output message="tns:takeBookResponse" name="takeBookResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addAppendix">
+      <wsdl:input message="tns:addAppendix" name="addAppendix">
+    </wsdl:input>
+      <wsdl:output message="tns:addAppendixResponse" name="addAppendixResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveBook">
+      <wsdl:input message="tns:saveBook" name="saveBook">
+    </wsdl:input>
+      <wsdl:output message="tns:saveBookResponse" name="saveBookResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EBookStoreImplServiceSoapBinding" type="tns:EBookStore">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="findEBooks">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="findEBooks">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="findEBooksResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="welcomeMessage">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="welcomeMessage">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="welcomeMessageResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="takeBook">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="takeBook">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="takeBookResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addAppendix">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="addAppendix">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addAppendixResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveBook">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="saveBook">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="saveBookResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EBookStoreImplService">
+    <wsdl:port binding="tns:EBookStoreImplServiceSoapBinding" name="EBookStoreImplPort">
+      <soap:address location="http://localhost:8080/JaxWSEndPoint/EBookStoreImplService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
