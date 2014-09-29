@@ -3,10 +3,12 @@ package cu.edu.java.ee7.jaxws.endpoint;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import javax.jws.HandlerChain;
 import javax.jws.WebService;
 
 @WebService(endpointInterface = "cu.edu.java.ee7.jaxws.endpoint.EBookStore",
 serviceName="EBookStoreImplService")
+@HandlerChain(file="handler-chain.xml")
 public class EBookStoreImpl implements EBookStore{
 
     private HashMap<String,EBook> eBookCollection=new HashMap<String,EBook>();
