@@ -128,3 +128,4 @@
 /jaxws/JaxWSClient/build/
 /jaxws/JaxWSClient/dist/
 /jaxws/JaxWSEndPointExample/nbproject/private/
+/json/object-builder/target/
