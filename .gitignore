@@ -151,3 +151,6 @@
 /web-sockets/HTTPSession/nbproject/private/
 /web-sockets/HTTPSession/dist/
 /web-sockets/HTTPSession/build/
+/web-sockets/WebSocketClient/nbproject/private/
+/web-sockets/WebSocketClient/dist/
+/web-sockets/WebSocketClient/build/
