@@ -154,3 +154,6 @@
 /web-sockets/WebSocketClient/nbproject/private/
 /web-sockets/WebSocketClient/dist/
 /web-sockets/WebSocketClient/build/
+/web-sockets/WebSocketClientConfig/nbproject/private/
+/web-sockets/WebSocketClientConfig/build/
+/web-sockets/WebSocketClientConfig/dist/
