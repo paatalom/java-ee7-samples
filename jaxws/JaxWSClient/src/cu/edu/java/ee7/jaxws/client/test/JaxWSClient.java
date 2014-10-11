@@ -14,7 +14,7 @@ public class JaxWSClient {
             EBookStoreImplService eBookStoreService = new EBookStoreImplService(
                     new URL("http://localhost:8080/JaxWSEndPoint/EBookStoreImplService?wsdl"));
             EBookStore eBookStore = eBookStoreService.getEBookStoreImplPort();
-            String response = eBookStore.welcomeMessage("Jackson");
+            String response = eBookStore.welcomeMessage("PAATA");
 
             // ======================= 
             System.out.println("First Request. Response From WS = " + response);

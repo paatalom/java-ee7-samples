@@ -129,3 +129,7 @@
 /jaxws/JaxWSClient/dist/
 /jaxws/JaxWSEndPointExample/nbproject/private/
 /json/object-builder/target/
+/jaxws/WebApplication1/nbproject/private/
+/web-sockets/WebSocketChat/nbproject/private/
+/web-sockets/WebSocketChat/build/
+/web-sockets/WebSocketChat/dist/
