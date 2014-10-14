@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.javaee7.jaxrs.client.negotiation.MyResourceTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.766 sec - in org.javaee7.jaxrs.client.negotiation.MyResourceTest

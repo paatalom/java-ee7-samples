@@ -1,4 +1,4 @@
-package org.javaee7.websocket.whiteboard;
+package cu.edu.java.ee7.websocket.whiteboard;
 
 import java.io.StringWriter;
 import javax.json.Json;

@@ -1,4 +1,4 @@
-package org.javaee7.websocket.whiteboard;
+package cu.edu.java.ee7.websocket.whiteboard;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

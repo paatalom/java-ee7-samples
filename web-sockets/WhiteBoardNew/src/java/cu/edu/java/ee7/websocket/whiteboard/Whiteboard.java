@@ -1,4 +1,4 @@
-package org.javaee7.websocket.whiteboard;
+package cu.edu.java.ee7.websocket.whiteboard;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -39,7 +39,6 @@ public class Whiteboard {
     public void broadcastFigure(Figure figure, Session session) throws IOException, EncodeException {
         LOGGER.log(Level.INFO, "boradcastFigure: {0}", figure);
         for (Session peer : session.getOpenSessions()) {
-//        for (Session peer : peers.keySet()) {
             if (!peer.equals(session)) {
                 peer.getBasicRemote().sendObject(figure);
             }
@@ -50,7 +49,6 @@ public class Whiteboard {
     public void broadcastSnapshot(ByteBuffer data, Session session) throws IOException {
         LOGGER.log(Level.INFO, "broadcastBinary: {0}", data);
         for (Session peer : session.getOpenSessions()) {
-//        for (Session peer : peers.keySet()) {
             if (!peer.equals(session)) {
                 peer.getBasicRemote().sendBinary(data);
             }
