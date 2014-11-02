@@ -174,3 +174,6 @@
 /ejb/StatelessBeans/nbproject/private/
 /ejb/StatelessBeans/build/
 /ejb/StatelessBeans/dist/
+/ejb/StatefulBeans/nbproject/private/
+/ejb/StatefulBeans/build/
+/ejb/StatefulBeans/dist/
