@@ -50,6 +50,10 @@ public class TestServlet extends HttpServlet {
         out.println("<br/>First Instance : " + account1);
         out.println("<br/>Secodn Instance : " + account2);
         out.println("<br/>Equals : " + account2.equals(account1));
+        out.println("<br/>Account 1. "+account1.deposit((float)5.0));
+        out.println("<br/>Account 1. "+account1.withdraw((float)2.0));
+        out.println("<br/>Account 1. Get Amount : "+account1.getAmount());
+        out.println("<br/>Account 2. Get Amount : "+account2.getAmount());
         out.println("</body>");
         out.println("</html>");
     }
