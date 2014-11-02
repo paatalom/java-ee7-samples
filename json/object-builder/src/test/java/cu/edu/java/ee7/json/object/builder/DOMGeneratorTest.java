@@ -43,10 +43,7 @@ public class DOMGeneratorTest {
 
     @Test
     public void testSimpleObject() throws JSONException {
-        JsonObject jsonObject = Json.createObjectBuilder()
-                .add("apple", "red")
-                .add("banana", "yellow")
-                .build();
+        JsonObject jsonObject = Json.createObjectBuilder().add("apple", "red").add("banana", "yellow").build();
         StringWriter w = new StringWriter();
         try (JsonWriter writer = Json.createWriter(w)) {
             writer.write(jsonObject);
