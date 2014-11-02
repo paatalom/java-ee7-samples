@@ -3,10 +3,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>EJB : Singletons</title>
+        <title>EJB : Stateless</title>
     </head>
     <body>
-        <h1>EJB : Singletons</h1>
+        <h1>EJB : Stateless</h1>
         Invoke the <a href="${pageContext.request.contextPath}/TestServlet"/>Test Servlet</a>.
     </body>
 </html>
