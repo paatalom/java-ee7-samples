@@ -1,4 +1,4 @@
-package org.javaee7.ejb.timer;
+package cu.edu.java.ee7.ejb.timer;
 
 import javax.ejb.Singleton;
 import javax.ejb.Startup;

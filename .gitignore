@@ -180,3 +180,6 @@
 /ejb/TimerExample/nbproject/private/
 /ejb/TimerExample/dist/
 /ejb/TimerExample/build/
+/ejb/AsyncSupport/nbproject/private/
+/ejb/AsyncSupport/build/
+/ejb/AsyncSupport/dist/
