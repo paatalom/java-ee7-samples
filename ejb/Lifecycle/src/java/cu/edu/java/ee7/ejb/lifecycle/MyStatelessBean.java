@@ -1,0 +1,28 @@
+package cu.edu.java.ee7.ejb.lifecycle;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+import javax.ejb.Stateless;
+
+@Stateless
+public class MyStatelessBean {
+    
+    @MyAroundConstructInterceptorBinding
+    public MyStatelessBean() {
+        System.out.println("MyStatelessBean.ctor");
+    }
+    
+    @PostConstruct
+    private void postConstruct() {
+        System.out.println("MyStatelessBean.postConstruct");
+    }
+    
+    @PreDestroy
+    private void preDestroy() {
+        System.out.println("MyStatelessBean.preDestroy");
+    }
+    
+    public void method1() {
+        System.out.println("MyBean.method1");
+    }
+}

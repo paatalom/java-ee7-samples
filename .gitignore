@@ -183,3 +183,6 @@
 /ejb/AsyncSupport/nbproject/private/
 /ejb/AsyncSupport/build/
 /ejb/AsyncSupport/dist/
+/ejb/Lifecycle/nbproject/private/
+/ejb/Lifecycle/dist/
+/ejb/Lifecycle/build/
