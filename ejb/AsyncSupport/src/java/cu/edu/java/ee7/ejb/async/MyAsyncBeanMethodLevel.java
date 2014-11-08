@@ -7,9 +7,6 @@ import java.util.concurrent.Future;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- * @author Arun Gupta
- */
 @Stateless
 public class MyAsyncBeanMethodLevel {
 
