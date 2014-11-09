@@ -1,4 +1,4 @@
-package org.javaee7.cdi.bean.discovery.all;
+package cu.edu.java.ee7.cdi.bean.discovery.all;
 
 public class SimpleGreeting implements Greeting {
 

@@ -1,4 +1,4 @@
-package org.javaee7.cdi.bean.discovery.all;
+package cu.edu.java.ee7.cdi.bean.discovery.annotated;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -21,10 +21,10 @@ public class TestServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>CDI Bean Discovery All </title>");
+            out.println("<title>CDI Bean Discovery Anotated </title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>CDI Bean Discovery All. Response From Injected Bean. </h1>");
+            out.println("<h1>CDI Bean Discovery Anotated. Response From Injected Bean. </h1>");
             out.println(bean.greet("James"));
             out.println("</body>");
             out.println("</html>");
