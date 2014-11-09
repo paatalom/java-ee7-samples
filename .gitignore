@@ -186,3 +186,6 @@
 /ejb/Lifecycle/nbproject/private/
 /ejb/Lifecycle/dist/
 /ejb/Lifecycle/build/
+/cdi/BeanDiscoveryAll/nbproject/private/
+/cdi/BeanDiscoveryAll/dist/
+/cdi/BeanDiscoveryAll/build/
