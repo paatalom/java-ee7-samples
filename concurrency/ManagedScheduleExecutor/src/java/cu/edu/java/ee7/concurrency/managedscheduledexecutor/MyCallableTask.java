@@ -2,9 +2,6 @@ package cu.edu.java.ee7.concurrency.managedscheduledexecutor;
 
 import java.util.concurrent.Callable;
 
-/**
- * @author Arun Gupta
- */
 public class MyCallableTask implements Callable<Product> {
     
     private int id;
