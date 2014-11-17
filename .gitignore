@@ -219,3 +219,9 @@
 /cdi/Scope/nbproject/private/
 /cdi/Scope/build/
 /cdi/Scope/dist/
+/cdi/DynamicProxy/nbproject/private/
+/cdi/DynamicProxy/dist/
+/cdi/DynamicProxy/build/
+/cdi/ManagedThreadFactory/nbproject/private/
+/cdi/ManagedThreadFactory/dist/
+/cdi/ManagedThreadFactory/build/
