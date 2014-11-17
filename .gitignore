@@ -225,3 +225,4 @@
 /cdi/ManagedThreadFactory/nbproject/private/
 /cdi/ManagedThreadFactory/dist/
 /cdi/ManagedThreadFactory/build/
+/concurrency/ManagedScheduleExecutor/nbproject/private/
