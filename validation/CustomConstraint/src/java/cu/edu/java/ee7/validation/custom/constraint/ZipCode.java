@@ -1,4 +1,4 @@
-package org.javaee7.validation.custom.constraint;
+package cu.edu.java.ee7.validation.custom.constraint;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
