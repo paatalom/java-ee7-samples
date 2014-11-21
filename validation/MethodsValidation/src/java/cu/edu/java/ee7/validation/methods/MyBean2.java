@@ -7,7 +7,6 @@ import javax.validation.Valid;
 @RequestScoped
 public class MyBean2 {
     private MyParameter value;
-
     public MyBean2() {
 
     }

@@ -13,12 +13,10 @@ public class MyBean {
     public String sayHello(@Size(max = 3)String name) {
         return "Hello " + name;
     }
-    
     @Future
     public Date showDate(Date paramDate) {
         return paramDate;
     }
-    
     public String showList(@NotNull @Size(min=1, max=3) List<String> list, @NotNull String prefix) {
         StringBuilder builder = new StringBuilder();
         
