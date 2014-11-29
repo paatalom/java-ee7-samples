@@ -1,4 +1,4 @@
-package cu.edu.java.ee7.jpa.entitygraph;
+package cu.edu.java.ee7.jpa.criteria;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "TestServlet", urlPatterns = {"/TestServlet"})
-public class TestServlet extends HttpServlet {
+@WebServlet(name = "TestServletDelete", urlPatterns = {"/TestServletDelete"})
+public class TestServletDelete extends HttpServlet {
     
     @EJB MovieBean bean;
 
@@ -36,11 +36,9 @@ public class TestServlet extends HttpServlet {
             out.println("<body>");
             out.println("<h1>Servlet TestServlet at " + request.getContextPath() + "</h1>");
 
-            out.println("--> Listing movies<br>");
-            for (Movie m : bean.listMovies()) {
-                out.println(m.getId() + ", " + m.getName() + "<br>");
-            }
-
+            bean.deleteMovie();
+            out.println("Delete Finished Successfully.<br>");
+           
             out.println("</body>");
             out.println("</html>");
         }

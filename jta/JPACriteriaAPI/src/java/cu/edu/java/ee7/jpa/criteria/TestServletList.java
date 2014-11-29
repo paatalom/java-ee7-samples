@@ -1,4 +1,4 @@
-package cu.edu.java.ee7.jpa.entitygraph;
+package cu.edu.java.ee7.jpa.criteria;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "TestServlet", urlPatterns = {"/TestServlet"})
-public class TestServlet extends HttpServlet {
+@WebServlet(name = "TestServletList", urlPatterns = {"/TestServletList"})
+public class TestServletList extends HttpServlet {
     
     @EJB MovieBean bean;
 
