@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <title>PrimeFaces</title>
+            </f:facet>
+
+            <script type="text/javascript">
+                function handleLoginRequest(xhr, status, args) {
+                    if (args.validationFailed || !args.loggedIn) {
+                        PF('dlg').jq.effect("shake", {times: 5}, 100);
+                    }
+                    else {
+                        PF('dlg').hide();
+                        $('#loginLink').fadeOut();
+                    }
+                }
+            </script>
+
+        </h:head>
+
+        <h:body>
+
+            <p:layout fullPage="true">
+                <p:layoutUnit position="center">
+                    <p:dialog appendTo="@(body)" header="Login" widgetVar="dlg" resizable="false" closable="false" modal="true" visible="true">
+                        <h:form>
+                            <h:panelGrid columns="2" cellpadding="5">
+                                <h:outputLabel for="username" value="Username:" />
+                                <p:inputText id="username" value="#{userLoginBean.username}" required="true" label="username" />
+
+                                <h:outputLabel for="password" value="Password:" />
+                                <p:password id="password" value="#{userLoginBean.password}" required="true" label="password" />
+
+                                <f:facet name="footer">
+                                    <p:commandButton value="Login" action="#{userLoginBean.login}"
+                                                     oncomplete="handleLoginRequest(xhr, status, args)" />
+                                </f:facet>  
+                            </h:panelGrid>
+                        </h:form>
+                    </p:dialog>
+                </p:layoutUnit>
+
+            </p:layout>
+
+        </h:body>
+
+    </f:view>
+</html>
+
