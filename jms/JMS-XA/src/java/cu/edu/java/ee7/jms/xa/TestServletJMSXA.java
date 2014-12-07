@@ -1,6 +1,5 @@
-package cu.edu.java.ee7.jms.send.receive.mdb;
+package cu.edu.java.ee7.jms.xa;
 
-import cu.edu.java.ee7.jms.send.receive.simple.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.ejb.EJB;
@@ -10,11 +9,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns = {"/TestServletMDB"})
-public class TestServletMDB extends HttpServlet {
+@WebServlet(urlPatterns = {"/TestServletJMSXA"})
+public class TestServletJMSXA extends HttpServlet {
 
     @EJB
-    MDBSender mDBSender;
+    Mailman mailman;
+
+    @EJB
+    DeliveryStats deliveryStats;
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -36,14 +38,25 @@ public class TestServletMDB extends HttpServlet {
             out.println("<title>Servlet TestServlet</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>MDB Example</h1>");
+            out.println("<h1>JMS - XA Example. Register New User</h1>");
 
-            String message = "MDB over container-managed JMSContext";
-            mDBSender.sendMessage(message);
+            out.println("Counter : " + deliveryStats.getDeliveredMessagesCount());
 
-            out.println("Message Sent.<br>");
-            out.println("See log file for received Message.<br>");
-
+            try {
+                mailman.sendMessage("paatalom@gmail.com");
+                out.println("User Registered.<br>");
+            } catch (Exception e) {
+                out.println("User Already Exist. Ignoring .... <br>");
+            }
+            
+            try {
+                mailman.sendMessage("paatalom@gmail.com");
+                out.println("User Registered.<br>");
+            } catch (Exception e) {
+                out.println("User Already Exist. Ignoring .... <br>");
+            }
+            
+            out.println("Counter After Registration : " + deliveryStats.getDeliveredMessagesCount());
             out.println("</body>");
             out.println("</html>");
         } finally {
