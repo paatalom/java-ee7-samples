@@ -268,3 +268,6 @@
 /jms/JMS-XA/nbproject/private/
 /jms/JMS-XA/dist/
 /jms/JMS-XA/build/
+/jpa/LockingOptimistic/nbproject/private/
+/jpa/LockingOptimistic/build/
+/jpa/LockingOptimistic/dist/
