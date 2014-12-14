@@ -60,7 +60,7 @@ public class MyManagedScheduledBatchBean implements MyManagedScheduledBatch {
 
     @Override
     public void runJob2() {
-        executor.scheduleWithFixedDelay(new MyJob(), 1, 2, TimeUnit.MINUTES);
+        executor.scheduleWithFixedDelay(new MyJob(), 1, 10, TimeUnit.SECONDS);
     }
 
     protected MyJob createJob() {
