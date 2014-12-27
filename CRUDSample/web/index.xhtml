@@ -1,0 +1,78 @@
+<ui:composition template="/WEB-INF/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui">
+    <ui:define name="content">
+
+        <h:form>
+
+            <p:menubar>
+                <p:menuitem value="Add New Movie" url="/pages/movie.xhtml" icon="ui-icon-contact"/>
+            </p:menubar>
+            <br/>
+            <p:dataTable id="tbl" var="car" value="#{MoviesViewBean.movies}" scrollHeight="400%"
+                         paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+                         paginator="true" rows="10" style="margin-bottom:20px;"
+                         selectionMode="single" selection="#{MoviesViewBean.selectedMovie}" rowKey="#{car.id}">
+
+                <p:column style="width: 100px">
+                    <f:facet name="header">
+                        <h:outputText value="Id" />
+                    </f:facet>
+                    <h:outputText value="#{car.id}" />
+                </p:column>
+
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="Name"/>
+                    </f:facet>
+                    <h:outputText value="#{car.name}" />
+                </p:column>
+
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="Actors" />
+                    </f:facet>
+                    <h:outputText value="#{car.actors}" />
+                </p:column>
+                
+                <p:column headerText="Action" style="width: 150px">
+                    <p:commandLink ajax="false" title="Edit" action="/pages/movie.xhtml"
+                        value="Edit">
+                        <f:param name="recordId" value="#{car.id}" />                        
+                    </p:commandLink>
+                     &#160;&#160;&#160;    
+                     <p:commandLink ajax="false" title="Delete" action="#{MoviesViewBean.deleteMovie}"
+                        value="Delete">
+                        <f:param name="recordId" value="#{car.id}" />                        
+                    </p:commandLink>
+                </p:column>
+                
+            </p:dataTable>
+
+            <h3>Export Page Data Only</h3>
+            <h:commandLink>
+                <p:graphicImage value="/images/excel.png" />
+                <p:dataExporter type="xls" target="tbl" fileName="cars" pageOnly="true"/>
+            </h:commandLink>
+
+            <h:commandLink>
+                <p:graphicImage value="/images/pdf.png" />
+                <p:dataExporter type="pdf" target="tbl" fileName="cars" pageOnly="true" />
+            </h:commandLink>
+
+            <h:commandLink>
+                <p:graphicImage value="/images/csv.png" />
+                <p:dataExporter type="csv" target="tbl" fileName="cars" pageOnly="true" />
+            </h:commandLink>
+
+            <h:commandLink>
+                <p:graphicImage value="/images/xml.png" />
+                <p:dataExporter type="xml" target="tbl" fileName="cars" pageOnly="true" />
+            </h:commandLink>
+        </h:form>
+
+    </ui:define>
+</ui:composition>

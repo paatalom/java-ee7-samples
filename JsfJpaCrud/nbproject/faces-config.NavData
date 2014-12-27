@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="pages/manufacturer/Detail.jsp" x="400" y="300" zoom="true"/>
+        <Node id="pages/productCode/List.jsp" x="109" y="78" zoom="true"/>
+        <Node id="pages/manufacturer/List.jsp" x="900" y="600" zoom="true"/>
+        <Node id="pages/productCode/New.jsp" x="150" y="450" zoom="true"/>
+        <Node id="welcomeJSF.jsp" x="1650" y="150" zoom="true"/>
+        <Node id="pages/microMarket/Detail.jsp" x="723" y="185" zoom="true"/>
+        <Node id="pages/purchaseOrder/New.jsp" x="400" y="600" zoom="true"/>
+        <Node id="pages/discountCode/Edit.jsp" x="150" y="750" zoom="true"/>
+        <Node id="pages/discountCode/New.jsp" x="650" y="750" zoom="true"/>
+        <Node id="pages/microMarket/List.jsp" x="650" y="300" zoom="true"/>
+        <Node id="pages/microMarket/New.jsp" x="1150" y="300" zoom="true"/>
+        <Node id="pages/purchaseOrder/Detail.jsp" x="650" y="450" zoom="true"/>
+        <Node id="pages/manufacturer/New.jsp" x="150" y="600" zoom="true"/>
+        <Node id="pages/customer/New.jsp" x="1057" y="89" zoom="true"/>
+        <Node id="pages/discountCode/Detail.jsp" x="150" y="900" zoom="true"/>
+        <Node id="pages/product/Detail.jsp" x="429" y="75" zoom="true"/>
+        <Node id="pages/productCode/Edit.jsp" x="1900" y="150" zoom="true"/>
+        <Node id="pages/manufacturer/Edit.jsp" x="1400" y="300" zoom="true"/>
+        <Node id="pages/product/New.jsp" x="150" y="1050" zoom="true"/>
+        <Node id="pages/discountCode/List.jsp" x="400" y="750" zoom="true"/>
+        <Node id="pages/customer/List.jsp" x="900" y="450" zoom="true"/>
+        <Node id="pages/product/Edit.jsp" x="150" y="300" zoom="true"/>
+        <Node id="pages/customer/Edit.jsp" x="400" y="450" zoom="true"/>
+        <Node id="pages/purchaseOrder/Edit.jsp" x="650" y="600" zoom="true"/>
+        <Node id="pages/productCode/Detail.jsp" x="900" y="300" zoom="true"/>
+        <Node id="pages/microMarket/Edit.jsp" x="400" y="900" zoom="true"/>
+        <Node id="pages/product/List.jsp" x="1150" y="450" zoom="true"/>
+        <Node id="pages/customer/Detail.jsp" x="1268" y="154" zoom="true"/>
+        <Node id="pages/purchaseOrder/List.jsp" x="730" y="72" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>
